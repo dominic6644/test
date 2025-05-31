@@ -174,7 +174,7 @@ app.post('/submit-form', (req, res) => {
 
 // Start server
 app.listen(port, () => {
-    console.log(`https://test-jup8.onrender.com/contact.html`);
+    console.log(`https://test-jup8.onrender.com/test/blob/main/contact.html`);
 });
 
 // === BLOG ROUTES ===
