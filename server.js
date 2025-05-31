@@ -169,7 +169,7 @@ app.post('/submit-form', (req, res) => {
 
 // Start server
 app.listen(port, () => {
-    console.log(`http://localhost:3000/contact.html`);
+    console.log(`https://api.render.com/deploy/srv-d0th51m3jp1c73ejmjsg?key=VYxsk3-CeO0/contact.html`);
 });
 
 // === BLOG ROUTES ===
