@@ -16,8 +16,8 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public')); // Serves static files from the 'public' directory
-app.use('/css', express.static(path.join(__dirname, 'css'))); // Serves CSS files from the 'css' directory
+
+
 
 // Other configurations and routes...
 
