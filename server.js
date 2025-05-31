@@ -10,7 +10,7 @@ const nodemailer = require('nodemailer');
 
 const app = express(); // ✅ This must come before app.use()
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 
 // ✅ Now safe to use
 app.use(cors());
