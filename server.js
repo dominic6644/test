@@ -7,17 +7,24 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const bcrypt = require('bcrypt');
 const nodemailer = require('nodemailer');
+const path = require('path');
 
-const app = express(); // ✅ This must come before app.use()
+const app = express();
 
 const port = process.env.PORT || 10000;
 
-// ✅ Now safe to use
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public')); // serves contact.html etc.
-app.use('/css', express.static('C:\puppeteer tutorial\css'));
+app.use(express.static('public')); // Serves static files from the 'public' directory
+app.use('/css', express.static(path.join(__dirname, 'css'))); // Serves CSS files from the 'css' directory
+
+// Other configurations and routes...
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
+
 
 
 
