@@ -367,7 +367,7 @@
   // Fetch and display products for each category
        async function fetchProducts(category, containerId) {
         try {
-            const response = await fetch(`https://test-jup8.onrender.com/products?table=${category}`);
+            const response = await fetch(`http://localhost:3000/products?table=${category}`);
             const products = await response.json();
             const container = document.getElementById(containerId);
 
